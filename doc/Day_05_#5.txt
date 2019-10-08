@@ -1,0 +1,14 @@
+﻿
+public static int hexToInt(char c) throws NumberFormatException {}
+
+public static int hexToInt(String s) throws Exception {
+    int number = 0;
+    s.trim();
+
+    for (int i = 0; i < s.length(); i++) {
+        // 문자 하나를 숫자로 바꾼다.
+        int temp = hexToInt(s.charAt(i));
+        number = (number << 4) + temp;
+    }
+    return number;
+}

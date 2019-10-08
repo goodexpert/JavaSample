@@ -1,0 +1,42 @@
+﻿    public static int hexToInt(char c) throws NumberFormatException {
+        switch (c) {
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+                return c - '0';
+
+            case 'A':
+            case 'a':
+                return 10;
+
+            case 'B':
+            case 'b':
+                return 11;
+
+            case 'C':
+            case 'c':
+                return 12;
+
+            case 'D':
+            case 'd':
+                return 13;
+
+            case 'E':
+            case 'e':
+                return 14;
+
+            case 'F':
+            case 'f':
+                return 15;
+
+            default:
+                throw new NumberFormatException(String.format("Invalid digit : %c", c));
+        }
+    }

@@ -1,0 +1,41 @@
+﻿연락처 관리 프로그램
+- contact 추가, 삭제, 검색
+- 파일 저장, 불러오기
+
+Address 클래스 정의
+- 상세주소 addressLine1 (String)
+- 상세주소 addressLine2 (String)
+- 주 state (String)
+- 도시 city (String)
+- 나라코드 countryCode (String)
+- 우편번호 postCode (String);
+
+Contact 클래스 정의
+- 성 lastName (String)
+- 이름 firstName (String)
+- 이메일 email (String)
+- 전화번호 phone (String)
+- 주소 address (Address)
+
+class Contact {
+    private String lastName;
+    private String firstName;
+    private String email;
+    private String phone;
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+}

@@ -1,0 +1,100 @@
+﻿1. 숫자 n(1과 9사이의 숫자)를 입력받아, 구구단을 출력 하시오.
+n = 3이라면, System.out.format("%d x %d = %d\n", 3, 1, (3 * 1))
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9
+3 x 4 = 12
+3 x 5 = 15
+3 x 6 = 18
+3 x 7 = 21
+3 x 8 = 24
+3 x 9 = 27
+
+
+break VS continue
+
+do {
+   num = scanner.nextInt();
+
+   if (num < 1 || num > 9)
+      continue;
+
+   for (int i = 1; i <= 9; i++) {
+      System.out.format("%d x %d = %d\n", num, i, (num * i));
+   }
+} while (true);
+
+
+*
+**
+***
+****
+*****
+******
+
+         *
+        **
+       ***
+      ****
+     *****
+    ******
+   *******
+  ********
+ *********
+**********
+
+// format 문자열
+%[width][format]
+width = 출력폭 (오른쪽 기준)
+format = [ d, f, s, x, o ]
+o = 8진수
+d = 10진수 정수
+x = 16진수
+f = 실수
+s = 문자열
+
+// 초기값
+String str = "*";
+
+System.out.format("%10s\n", str);
+str += "*";
+
+String.format("%%%ds\n", n); /// n이 10이라면 출력은 %10s\n
+
+
+n = 10;
+System.format("%d", n);
+
+n 자리의 문자열을 어떻게 만드냐?
+%ns => %% + %d + s =%%%ds
+
+System.out.format(String.format("%%%ds\n", n), pattern);
+System.out.format("%10s\n", pattern);
+
+
+import java.util.Scanner;
+
+public class Solution4 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String temp;
+        boolean isDigit = true;
+
+        temp = scanner.next();
+        try {
+            int value = Integer.parseInt(temp);
+        } catch (Exception ex) {
+        }
+
+        temp.trim();
+
+        for (int i = 0; i < temp.length(); i++) {
+            char ch = temp.charAt(i);
+            System.out.format("%c %b\n", ch, Character.isDigit(ch));
+            if (!Character.isDigit(ch)) {
+                isDigit = false;
+                break;
+            }
+        }
+    }
+}

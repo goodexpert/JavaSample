@@ -1,0 +1,27 @@
+﻿sudo apt update --fix-missing
+sudo apt install openjdk-8-jdk
+java -version
+
+$ vi (enter)
+
+Editor or Command
+$ mv java.test Sample.java (enter)
+
+$ mv test.java Sample.java (enter)
+
+자바의 모든 class는 Object 클래스를 상속받는다.
+
+$ javac Sample.java (enter)
+$ ls
+$ java Sample (enter)
+
+- 실습 하기 #1 (디렉토리 생성 후, 파일 복사)
+$ mkdir -p workspace/Sample (enter)
+$ mv Sample.java workspace/Sample/ (enter)
+$ cd workspace/Sample (enter)
+
+- 실습 하기 #2 (디렉토리 복사 후, 파일명 변경 및 클래스명 변경)
+$ cd ~/workspace (enter)
+$ cp -R Sample HelloWorld (enter)
+$ mv HelloWorld/Sample.java HelloWorld/HelloWorld.java (enter)
+클래스 이름을 Sample에서 HelloWorld로 변경하시오
