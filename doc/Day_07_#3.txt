@@ -1,0 +1,22 @@
+﻿1. 추상화 클래스, 인터페이스, 제너릭 클래스를 각각 사용하여, 스택을 구현하시오.
+   - 배열을 사용하여 구현한다.
+   - 자바 콜렉션 타입을 사용하여 구현한다.
+
+2. 자바 콜렉션 타입
+   - Collection<E>
+   - Iterable<E>
+   - Iterator<E>
+   - List<E>
+   - Map<E>
+   - Queue<E>
+   - Set<E>
+
+3. Race Condition은 무엇이고, 다중 쓰레드 환경에서 안전한 코드란 무엇인가?
+
+4. 다중 쓰레드 환경에서 안전한 코드란?
+
+5. 동기화 객체란 무엇인가? (Mutex, Semaphore 등)
+
+6. 생성자(Constructor)란 무엇인가?
+
+7. 기본생성자 (Default constructor)란 무엇인가?
