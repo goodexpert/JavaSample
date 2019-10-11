@@ -26,7 +26,7 @@ public class Fibonacci {
 	 */
 	}
 
-	// Memorization 기법
+	// Memoization 기법
 	public static long fibonacci2(int n) {
 		if (n < 0 || n > 80)
 			throw new IndexOutOfBoundsException(String.format("Out of bounds : %d", n));

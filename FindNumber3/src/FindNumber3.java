@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class FindNumber3 {
 
 	// number 123
+	// 자릿수를 알수 없는 큰 숫자에서 숫자 하나하나를 다룰때 알아야 하는 코드.
 	public static int find369(int number) {
 		int count = 0;
 		while (number > 0) {
