@@ -1,0 +1,31 @@
+﻿1. 매일 각반의 수강생들의 출석여부를 관리할수 있도록 출석부를 만드시오.
+   - 수강생 (Student)
+   - 출결 (Attendance)
+   - 날짜 (Date)
+
+   Map<Date, AttendanceList> dailyAttendances;
+
+   class Attendance {
+      Student student;
+      boolean isAttendance;
+   }
+
+   class AttendanceList {
+      Date date;
+      List<Attendance> attendances;
+   }
+
+2. 과별 학생 목록을 관리 하시오.
+  - 학생 (Student)
+  - 과 (Department)
+
+  class Student {
+     Department department;
+  }
+
+  class Department {
+     List<Student> students;
+  }
+
+
+

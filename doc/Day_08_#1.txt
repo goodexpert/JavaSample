@@ -1,0 +1,9 @@
+﻿1. enum(열거형)을 사용하는 경우와 열거형이 아닌 타입을 사용하는 경우 비교
+  String gender;
+  gender = "Female" or gender = "Male" or gender = "cd"
+
+  enum Gender { FEMALE, MALE };
+  Gender gender;
+  gender = Gender.FEMALE or gender = Gender.MALE
+
+2.
