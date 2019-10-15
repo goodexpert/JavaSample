@@ -11,4 +11,5 @@ public interface List {
 	void removeAt(int index);
 
 	int getAt(int index);
+	int size();
 }

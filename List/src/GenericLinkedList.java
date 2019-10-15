@@ -1,10 +1,10 @@
 
-public class SingleLinkedList implements List {
+public class GenericLinkedList<T extends Object> implements GenericList<T> {
 	class Node {
-		private int data;
+		private T data;
 		private Node next;
 
-		public Node(int data, Node next) {
+		public Node(T data, Node next) {
 			this.data = data;
 			this.next = next;
 		}
@@ -13,14 +13,14 @@ public class SingleLinkedList implements List {
 	private Node head;
 	private Node tail;
 
-	public SingleLinkedList() {
+	public GenericLinkedList() {
 		// TODO Auto-generated constructor stub
 		this.head = null;
 		this.tail = null;
 	}
 
 	@Override
-	public void addHead(int data) {
+	public void addHead(T data) {
 		// TODO Auto-generated method stub
 		Node newNode = new Node(data, this.head);
 		if (this.head == null)
@@ -30,7 +30,7 @@ public class SingleLinkedList implements List {
 	}
 
 	@Override
-	public void addTail(int data) {
+	public void addTail(T data) {
 		// TODO Auto-generated method stub
 		Node newNode = new Node(data, null);
 		if (this.head == null)
@@ -67,7 +67,7 @@ public class SingleLinkedList implements List {
 	}
 
 	@Override
-	public void insertAt(int index, int data) {
+	public void insertAt(int index, T data) {
 		// TODO Auto-generated method stub
 		int count = size();
 		if (index < 0 || index > count) {
@@ -133,7 +133,7 @@ public class SingleLinkedList implements List {
 	}
 
 	@Override
-	public int getAt(int index) {
+	public T getAt(int index) {
 		// TODO Auto-generated method stub
 		int count = size();
 		if (count == 0 || index < 0 || index >= count) {

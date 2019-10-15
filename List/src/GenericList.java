@@ -11,4 +11,5 @@ public interface GenericList<T extends Object> {
 	void removeAt(int index);
 
 	T getAt(int index);
+	int size();
 }
