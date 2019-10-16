@@ -33,17 +33,24 @@ public class StringToNumber {
         return isDigit;
     }
 
-    public static Integer parseInt(String str) {
+    // case 1, str = null
+    // case 2, str = "    "
+    // case 3, str = " 12 3 "
+    // case 4, str = "12x34"
+    public static Integer parseInt(String str) throws Exception {
         if (str == null)
-            return null;
+            throw new NullPointerException();
+
+        str.trim();
+        if (str.isEmpty())
+            throw new NumberFormatException("Invalid number format");
 
         int number = 0;
-        str.trim();
-
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             if (!Character.isDigit(ch)) {
-                return null;
+//                return null;
+                throw new NumberFormatException("Invalid number format");
             } else {
                 number = number * 10 + (ch - '0');
             }

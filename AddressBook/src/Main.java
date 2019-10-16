@@ -11,6 +11,12 @@ public class Main {
 	}
 
 	private void drawMenu() {
+		try {
+			Runtime.getRuntime().exec("cls");
+		} catch (Exception ex) {
+		}
+		System.out.flush();
+
 		System.out.println("a) 추가");
 		System.out.println("p) 출력");
 		System.out.println("x) 종료");
