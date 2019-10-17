@@ -1,0 +1,38 @@
+﻿0. File의 경로(pathname)과 파일 이름(Filename)
+   - pathname은 절대 경로와 상대경로가 존재
+   - filename은 보통 파일 자체의 이름을 말함
+
+1. File 사용하기
+   - PrintWriter 실습
+     import java.io.*
+     
+     try {
+         PrintWriter printer = new PrinterWriter("Hello.txt");
+
+         printer.println("Hello World");
+ 
+         printer.flush();
+         printer.close();
+    } catch (Exception ex) {
+    }
+
+2. File 실습하기 #2
+   - 친구가 몇명인지 물어본다.
+   - 입력된 수만큼 이름을 입력받아, 파일에 저장한다.
+
+3. 입력된 문자열에서 토큰화 하는 방법
+String line = "localhost\t127.0.0.1";
+String[] tokens = line.split("\t");
+
+String password = "root:0:/root:/bin/bash"
+String[] items = password.split(":");
+
+4. java.io.Serializable 인터페이스를 상속받은 클래스의 객체가 직렬화를 가능하게 해준다.
+
+   FileOutputStream outputStream = new FileOutputStream("");
+   ObjectOutputStream objOutput = new ObjectOutputStream(outputStream);
+
+   objOutput.writeObject(시리얼라이즈 가능한 오브젝트 전달);
+
+  - 직력화 가능한 클래스 정의
+   - 모든 멤버는 직렬화 가능한 클래스 이여야 한다.

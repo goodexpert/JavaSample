@@ -18,10 +18,14 @@ public class Main {
 
 			while ((line = reader.readLine()) != null) {
 				String[] cols = line.split(",");
-				System.out.format("cols: %d, First: %s\n", cols.length, cols[0]);
+				rows.add(cols);
 			}
 			reader.close();
 			fileReader.close();
+
+			for (String[] cols : rows) {
+				System.out.format("cols: %d, First: %s\n", cols.length, cols[0]);
+			}
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
