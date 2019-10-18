@@ -1,6 +1,7 @@
 import java.io.*;
 import java.nio.*;
 import java.nio.charset.Charset;
+import java.util.Arrays;
 
 public class Record {
 
@@ -25,6 +26,8 @@ public class Record {
 	public void setName(String name) {
 		byte[] temp = name.getBytes();
 		int len = Math.min(temp.length, 256);
+
+		Arrays.fill(this.name, (byte) 256);
 		System.arraycopy(temp, 0, this.name, 0, len);
 	}
 
@@ -35,6 +38,8 @@ public class Record {
 	public void setDepartment(String department) {
 		byte[] temp = department.getBytes();
 		int len = Math.min(temp.length, 256);
+
+		Arrays.fill(this.name, (byte) 256);
 		System.arraycopy(temp, 0, this.department, 0, len);
 	}
 
