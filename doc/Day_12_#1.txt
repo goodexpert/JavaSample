@@ -1,0 +1,7 @@
+﻿1. File access 개념
+   소유여부와 접근 권한이 있는지 체크 한다.
+   rwx(user) rwx(group) rwx(other)
+   r : 읽기 권한, 4
+   w : 쓰기 권한, 2
+   x : 실행 권한, 1
+

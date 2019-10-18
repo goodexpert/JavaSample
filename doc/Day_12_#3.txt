@@ -1,0 +1,12 @@
+﻿- Database 개론
+- SQL (MySQL or Oracle)
+- JSP (Java Servlet Page) and JavaScript, CSS3 and HTML5
+- Java EE(Enterprise Edition, Jakarta)
+- Spring 5.0 and Spring Boot 2.0
+- 
+
+Steve Park
+seongwuk.park@gmail.com
++64 27 888 9898
+
+https://www.linkedin.com/in/goodexpert

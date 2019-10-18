@@ -1,0 +1,37 @@
+﻿1. 자바언어의 특징
+
+2. 문법 (Syntax)
+   - 타입
+   - 변수와 상수
+
+3. 제어문, 반복문
+
+  for-loop <=> while-loop 변경 가능
+
+   1) for (int i = 0; i < 10; i++);
+   2) int i = 0;
+      while (i < 10) {
+          //....;
+          i++; // end of while-loop's body.
+      }
+
+  - infinite loop
+    for (;;) {
+    }
+
+    while (true) {
+    }
+
+  - switch <=> if-else if-else
+
+  - 3항 연산자(?:) <=> if-else
+     char grade = 'A';
+     if (scores >= 90)
+        grade = 'A';
+     else if (scores >= 80)
+        grade = 'B';
+     else
+        grade = 'F';
+
+    => grade = (scores >= 90 ? 'A'
+		 : (scores >= 80 ? 'B' : 'F'));
